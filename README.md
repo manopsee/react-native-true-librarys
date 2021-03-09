@@ -5,7 +5,7 @@
 
 `$ npm install react-native-true-librarys --save`
 
-### Mostly automatic installation
+<!-- ### Mostly automatic installation
 
 `$ react-native link react-native-true-librarys`
 
@@ -41,13 +41,13 @@
 2. Open up your `MainPage.cs` app
   - Add `using True.Librarys.RNTrueLibrarys;` to the usings at the top of the file
   - Add `new RNTrueLibrarysPackage()` to the `List<IReactPackage>` returned by the `Packages` method
-
+ -->
 
 ## Please install
 
  - `$ npm i @react-native-community/netinfo --save`
- - `$ npm install react-native-image-marker --save`
  - `$ npm install react-native-ping --save`
+ - `$ npm install react-native-image-marker --save`
 
 ## Usage
 ```javascript
@@ -55,7 +55,10 @@ import TrueLibs from 'react-native-true-librarys';
 
 // TODO: What to do with the module?
 TrueLibs.DetectNetwork();
+
 TrueLibs.SpeedTest();
+
 TrueLibs.ImageMaker(ImageUri,Text,FontSize);
+
 ```
   

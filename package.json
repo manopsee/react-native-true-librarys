@@ -27,9 +27,6 @@
     "type": "git",
     "url": "git+https://github.com/manopsee/true-librarys.git"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  },
   "bugs": {
     "url": "https://github.com/manopsee/true-librarys/issues"
   },
