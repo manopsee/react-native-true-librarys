@@ -20,7 +20,11 @@
     "react-native-image-marker": "^0.6.1",
     "react-native-ping": "^1.2.6"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/manopsee/true-librarys.git"
+  },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com/manopsee/true-librarys.git"
   }
 }

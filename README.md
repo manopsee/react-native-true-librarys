@@ -43,6 +43,12 @@
   - Add `new RNTrueLibrarysPackage()` to the `List<IReactPackage>` returned by the `Packages` method
 
 
+## Please install
+
+`$ npm i @react-native-community/netinfo --save`
+`$ npm install react-native-image-marker --save`
+`$ npm install react-native-ping --save`
+
 ## Usage
 ```javascript
 import TrueLibs from 'react-native-true-librarys';
