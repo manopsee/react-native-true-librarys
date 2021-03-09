@@ -1,16 +1,19 @@
 {
   "name": "react-native-true-librarys",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Getting started",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "react-native"
+    "react-native",
+    "mobile",
+    "ios",
+    "android"
   ],
-  "author": "",
-  "license": "",
+  "author": "James ApplicationDD <manop.j03@gmail.com>",
+  "license": "MIT",
   "peerDependencies": {
     "react-native": "^0.41.2",
     "react-native-windows": "0.41.0-rc.1"
@@ -22,9 +25,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/manopsee/true-librarys.git"
+    "url": "git+https://github.com/manopsee/true-librarys.git"
   },
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/manopsee"
-  }
+    "registry": "https://npm.pkg.github.com"
+  },
+  "bugs": {
+    "url": "https://github.com/manopsee/true-librarys/issues"
+  },
+  "homepage": "https://github.com/manopsee/true-librarys#readme",
+  "devDependencies": {}
 }

@@ -45,9 +45,9 @@
 
 ## Please install
 
-`$ npm i @react-native-community/netinfo --save`
-`$ npm install react-native-image-marker --save`
-`$ npm install react-native-ping --save`
+ - `$ npm i @react-native-community/netinfo --save`
+ - `$ npm install react-native-image-marker --save`
+ - `$ npm install react-native-ping --save`
 
 ## Usage
 ```javascript
