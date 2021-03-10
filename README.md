@@ -60,5 +60,10 @@ TrueLibs.SpeedTest();
 
 TrueLibs.ImageMaker(ImageUri,Text,FontSize);
 
+TrueLibs.MergeImage(uri1,uri2,orient);
+//uri1,uri2 : base64;
+//orient : string "vertical","horizontal" default "horizontal" for Android
+
 ```
+
   
