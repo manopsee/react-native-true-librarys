@@ -48,7 +48,7 @@
  - `$ npm i @react-native-community/netinfo --save`
  - `$ npm install react-native-ping --save`
  - `$ npm install react-native-image-marker --save`
- - `$ npm install @manopsee/react-native-images-merge@1.1.5`
+ - `$ npm install @manopsee/react-native-images-merge --save`
 
 ## Usage
 ```javascript
@@ -61,9 +61,11 @@ TrueLibs.SpeedTest();
 
 TrueLibs.ImageMaker(ImageUri,Text,FontSize);
 
-TrueLibs.MergeImage(uri1,uri2,orient);
+TrueLibs.MergeImage(uri1,uri2,"vertical",(res)=>{
+	console.log(res)
+})
 //uri1,uri2 : base64;
-//orient : string "vertical","horizontal" default "horizontal" for Android
+//orient : string "vertical","horizontal" default "horizontal"
 
 ```
 

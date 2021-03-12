@@ -3,7 +3,7 @@ import { NativeModules } from 'react-native';
 import NetInfo from "@react-native-community/netinfo";
 import Ping from 'react-native-ping';
 import ImageMarker from "react-native-image-marker"
-import ImagesMerge from 'react-native-images-merge';
+import ImagesMerge from '@manopsee/react-native-images-merge';
 
 const { RNTrueLibrarys } = NativeModules;
 
@@ -64,14 +64,29 @@ class TrueLibs {
         return result
     }
 
-    static async MergeImage(uri1,uri2,orient) {
-        let res = await ImagesMerge.mergeImages([{uri: uri1}, { uri: uri2 }],orient);
-        if(res){
-            res = 'data:image/png;base64,'+res
-            return res
+    static async MergeImage(uri1,uri2,orient,callback) {
+        if(Platform.OS === 'ios'){
+            ImagesMerge.mergeImages([
+                {uri: 'data:image/png;base64,'+uri1,orients: orient},
+                {uri: 'data:image/png;base64,'+uri2,orients: orient}
+            ],(result) => {
+                if(result){
+                    let res = 'data:image/png;base64,'+result
+                    return callback(res)
+                }else{
+                    let res = 'ERROR'
+                    return callback(res)
+                }
+            });
         }else{
-            res = 'ERROR'
-            return res
+            let res = await ImagesMerge.mergeImages([{uri: uri1}, { uri: uri2 }],orient);
+            if(res){
+                res = 'data:image/png;base64,'+res
+                return callback(res)
+            }else{
+                res = 'ERROR'
+                return callback(res)
+            }
         }
     }
 
