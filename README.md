@@ -48,7 +48,7 @@
  - `$ npm i @react-native-community/netinfo --save`
  - `$ npm install react-native-ping --save`
  - `$ npm install react-native-image-marker --save`
- - `$ npm install @manopsee/react-native-merge-two-image --save`
+ - `$ npm install react-native-merge-two-image --save`
 
 ## Usage
 ```javascript

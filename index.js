@@ -3,7 +3,7 @@ import { NativeModules } from 'react-native';
 import NetInfo from "@react-native-community/netinfo";
 import Ping from 'react-native-ping';
 import ImageMarker from "react-native-image-marker"
-import ImagesMerge from '@manopsee/react-native-merge-two-image';
+import ImagesMerge from 'react-native-merge-two-image';
 
 const { RNTrueLibrarys } = NativeModules;
 
